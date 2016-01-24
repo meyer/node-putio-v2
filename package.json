@@ -1,17 +1,27 @@
 {
-  "author": "Tristan Davies <npm@tristan.io> (http://tristan.io)",
-  "name": "put.io-v2",
-  "description": "API v2 Library for put.io",
-  "version": "0.0.2",
+  "name": "put.io",
+  "version": "1.0.0",
+  "description": "v2 API library for put.io",
+  "main": "lib/putio.js",
+  "dependencies": {
+    "invariant": "^2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "prepublish": "babel src --out-dir lib"
+  },
+  "babel": {
+    "presets": ["es2015"]
+  },
   "repository": {
     "type": "git",
-    "url": "git://github.com/devTristan/put.io.js-v2.git"
+    "url": "git+https://github.com/meyer/node-putio.git"
   },
-  "main": "./putio",
-  "engines": {
-    "node": ">=0.8.1"
+  "keywords": [],
+  "author": "Mike Meyer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meyer/node-putio/issues"
   },
-  "dependencies": {},
-  "devDependencies": {},
-  "contributors": []
+  "homepage": "https://github.com/meyer/node-putio#readme"
 }
